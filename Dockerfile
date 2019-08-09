@@ -12,9 +12,9 @@ COPY ./ /home/lessonapp
 
 ARG JAR_FILE=target/docker_lesson-0.0.1-SNAPSHOT.jar
 
-ADD ${JAR_FILE} test.jar
-
 EXPOSE 8090
+
+ADD ${JAR_FILE} test.jar
 
 CMD java -jar test.jar
 
