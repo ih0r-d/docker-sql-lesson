@@ -35,4 +35,9 @@ public class UserRepositoryImpl implements UserRepository{
         USERS.removeIf(u -> Objects.equals(u.getId(), id));
         USERS.add(user);
     }
+
+    @Override
+    public User findUserById(Long id) {
+        return USERS.get(Math.toIntExact(id));
+    }
 }
