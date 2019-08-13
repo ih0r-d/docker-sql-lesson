@@ -2,6 +2,7 @@ package edu.cursor.lesson.controller;
 
 import edu.cursor.lesson.model.User;
 import edu.cursor.lesson.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class MainController {
 
     private final UserRepository userRepository;
 
-    public MainController(UserRepository userRepository) {
+    public MainController(@Qualifier("userRepositoryJdbcImpl") UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
