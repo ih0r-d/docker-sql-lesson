@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    image: postgres:9.6
+    container_name: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data/pgdata
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: lesson_db
+      PGDATA: /var/lib/postgresql/data/pgdata
+    restart: always
+  app:
+    build: .
+    container_name: cursor-lesson
+    ports:
+      - 8080:8080
+    environment:
+      POSTGRES_HOST: db
+    restart: always
+    links:
+      - db
