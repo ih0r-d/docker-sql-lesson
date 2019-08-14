@@ -50,3 +50,18 @@ https://www.udemy.com/sql-postgresql-from-beginner-to-pro/
 * В Readme повинно бути вказане посилання, на docker hub, де маж бути залитий image
 * Всі запити повинні бути збережені у файлі library_db.sql та залиті на github
 
+
+
+### JDBC & JDBC Template
+* https://www.baeldung.com/java-jdbc
+* http://javastudy.ru/interview/javaee-sql-jdbc-interview/
+* https://www.baeldung.com/spring-jdbc-jdbctemplate
+* https://easyjava.ru/spring/spring-data-access/zaprosy-v-spring-jdbc/
+* https://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/jdbc.html
+
+### Docker compose
+* https://docs.docker.com/compose/
+* https://habr.com/ru/post/337306/
+* https://habr.com/ru/post/454552/
+
+
